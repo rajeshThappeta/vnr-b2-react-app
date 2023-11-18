@@ -1,11 +1,12 @@
 
 import "./App.css";
-import UserList from "./components/userlist/UserList";
+import EffectsDemo from "./components/effects-demo/EffectsDemo";
+
 
 function App() {
   return <div >
     {/* nest StateDemo */}
-    <UserList />
+    <EffectsDemo />
   </div>;
 }
 
