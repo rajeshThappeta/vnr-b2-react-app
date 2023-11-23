@@ -1,12 +1,14 @@
 
 import "./App.css";
-import EffectsDemo from "./components/effects-demo/EffectsDemo";
+
+
+import FormDemo2 from "./components/form-demo1/FormDemo2";
 
 
 function App() {
   return <div >
     {/* nest StateDemo */}
-    <EffectsDemo />
+    <FormDemo2/>
   </div>;
 }
 
