@@ -1,15 +1,20 @@
-
 import "./App.css";
+import ManageTodos from "./components/to-do/ManageTodos";
 
-
-import FormDemo2 from "./components/form-demo1/FormDemo2";
 
 
 function App() {
-  return <div >
-    {/* nest StateDemo */}
-    <FormDemo2/>
-  </div>;
+  return (
+    <div>
+      <h1 className="display-3 text-center text-info">
+        Demo of Lifting State Up
+      </h1>
+      <div className="container">
+        {/* nesting components */}
+        <ManageTodos />
+        </div>
+    </div>
+  );
 }
 
 export default App;
