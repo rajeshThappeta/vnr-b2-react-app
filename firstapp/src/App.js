@@ -1,7 +1,8 @@
 import "./App.css";
 import ManageTodos from "./components/to-do/ManageTodos";
-
-
+import Users from "./components/users-context/Users";
+import TodosContextProvider from "./contexts/TodosContextProvider";
+import UsersContextProvider from "./contexts/UsersContextProvider";
 
 function App() {
   return (
@@ -11,8 +12,13 @@ function App() {
       </h1>
       <div className="container">
         {/* nesting components */}
-        <ManageTodos />
-        </div>
+        <TodosContextProvider>
+          <ManageTodos />
+        </TodosContextProvider>
+        <UsersContextProvider>
+          <Users />
+        </UsersContextProvider>
+      </div>
     </div>
   );
 }
